@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.main-title {
+  text-align: center;
+}
+.button-primary {
+  padding: 11px 44px 10px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: lightslategray;
+  border: none;
+  box-sizing: border-box;
+}
+
+.button-primary:hover,
+.button-second:hover {
+  background-color: lightseagreen;
+}
+
+.button-primary:active span {
+  opacity: 0.3;
+}
+
+.button-second {
+  padding: 5px 7px;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  background-color: lightslategray;
+  text-decoration: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+.input-text,
+.input-image {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+}
+
+.input-text__span,
+.input-image__span {
+  margin-right: 13px;
+  font-size: 16px;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+.input-text__input {
+  position: relative;
+  flex-grow: 1;
+  padding: 14px 51px 14px 15px;
+  width: calc(100% - 20px);
+  height: 43px;
+  font-size: 16px;
+  line-height: 18px;
+  border: none;
+  outline: 1px solid lightslategray;
+  box-sizing: border-box;
+}
+
+.input-image__input {
+  position: relative;
+  flex-grow: 1;
+  padding: 10px 51px 10px 15px;
+  width: calc(100% - 20px);
+  height: 43px;
+  font-size: 16px;
+  line-height: 18px;
+  border: none;
+  outline: 1px solid lightslategray;
+  box-sizing: border-box;
+}
+
+.explanation {
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.formAddBook {
+  margin-bottom: 40px;
+}
+
+.formAddBook__input {
+  margin-bottom: 20px;
+}
+
+.book-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.book {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding-right: 15px;
+  margin-bottom: 10px;
+}
+
+.book:hover {
+  outline: 2px solid #282c34;
+}
+
+.title,
+.author {
+  font-weight: bold;
+}
+
+.cover {
+  margin-right: 30px;
+  background-color: lightblue;
+}
+
+.cover__img {
+  display: block;
+  margin: auto;
+  object-fit: cover;
+}
+
+.delete-book {
+  margin-left: auto;
+}
